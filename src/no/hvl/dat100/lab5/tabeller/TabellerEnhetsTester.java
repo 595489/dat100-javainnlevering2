@@ -2,6 +2,7 @@ package no.hvl.dat100.lab5.tabeller;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import no.hvl.dat100.lab5.tabeller.Tabeller;
 import org.junit.jupiter.api.Test;
 
 class TabellerEnhetsTester {

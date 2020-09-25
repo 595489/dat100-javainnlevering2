@@ -13,7 +13,7 @@ Du kan nå clone denne kopien ned på egen PC og importere prosjektet med start-
 
 ### Startkode og enhetstest
 
-Klassene Tabeller.java og Matriser.java inneholder starten på metodene dere skal implementere i oppgavene. Klassene TabellerEnhetsTester.java og MatriserEnhetstester.java inneholder JUnit-enhettester som kan brukes til å teste implementasjon av metoden etterhvert. Disse kan kjøre ved å høyreklikke på filen og velge `Run As -> JUnit Test`.
+Klassene Tabeller.java og Matriser.java inneholder starten på metodene dere skal implementere i oppgavene. Klassene no.hvl.dat100.lab5.tabeller.TabellerEnhetsTester.java og MatriserEnhetstester.java inneholder JUnit-enhettester som kan brukes til å teste implementasjon av metoden etterhvert. Disse kan kjøre ved å høyreklikke på filen og velge `Run As -> JUnit Test`.
 
 ### Innlevering
 

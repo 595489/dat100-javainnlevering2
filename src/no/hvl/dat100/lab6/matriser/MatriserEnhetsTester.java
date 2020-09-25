@@ -2,6 +2,7 @@ package no.hvl.dat100.lab6.matriser;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import no.hvl.dat100.lab6.matriser.Matriser;
 import org.junit.jupiter.api.Test;
 
 class MatriserEnhetsTester {
@@ -12,7 +13,7 @@ class MatriserEnhetsTester {
 	@Test
 	void testtilStreng() {
 		
-		assertEquals("1 2 3 \n4 5 6 \n7 8 9 \n",Matriser.tilStreng(a));
+		assertEquals("1 2 3 \n4 5 6 \n7 8 9 \n", Matriser.tilStreng(a));
 	}
 
 	@Test
