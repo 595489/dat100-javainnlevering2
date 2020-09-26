@@ -9,7 +9,7 @@ public class Matriser
 
         for (int i = 0; i < matrise.length; i++)
         {
-			for (int j = 0; j < matrise.length; j++)
+			for (int j = 0; j < matrise[i].length; j++)
             {
                 System.out.print(matrise[i][j]);
 
@@ -27,7 +27,7 @@ public class Matriser
         StringBuilder streng = new StringBuilder();
         for (int i = 0; i < matrise.length; i++)
         {
-            for (int j = 0; j < matrise.length; j++)
+            for (int j = 0; j < matrise[i].length; j++)
             {
                 streng.append(matrise[i][j]).append(" ");
             }
@@ -42,17 +42,38 @@ public class Matriser
     public static int[][] skaler(int tall, int[][] matrise)
     {
 
-        // TODO
-        throw new UnsupportedOperationException("skaler ikke implementert");
+        int length = matrise.length;
+        int x = 0;
+        int[][]newMatrise = new int[length][matrise[0].length];
+        for (int i = 0; i < matrise.length; i++)
+        {
+            for (int j = 0; j < matrise[i].length; j++)
+            {
+                newMatrise[i][j] = matrise[i][j] * tall;
+            }
+        }
 
+        return newMatrise;
     }
 
     // d)
     public static boolean erLik(int[][] a, int[][] b)
     {
+        if (a.length != b.length)
+            return false;
 
-        // TODO
-        throw new UnsupportedOperationException("erLik ikke implementert");
+        else
+        {
+            for (int i = 0; i < a.length; i++)
+            {
+                for (int j = 0; j < a[i].length; j++)
+                {
+                    if (a[i][j] != b[i][j] || a[i].length != b[i].length)
+                        return false;
+                }
+            }
+            return true;
+        }
     }
 
     // e)
@@ -68,8 +89,6 @@ public class Matriser
     public static int[][] multipliser(int[][] a, int[][] b)
     {
 
-        // TODO
-        throw new UnsupportedOperationException("multipliser ikke implementert");
-
+        if (a.length != b[0].length)
     }
 }
