@@ -24,9 +24,18 @@ public class Matriser
     public static String tilStreng(int[][] matrise)
     {
 
-        // TODO
-        throw new UnsupportedOperationException("tilStreng ikke implementert");
+        StringBuilder streng = new StringBuilder();
+        for (int i = 0; i < matrise.length; i++)
+        {
+            for (int j = 0; j < matrise.length; j++)
+            {
+                streng.append(matrise[i][j]).append(" ");
+            }
 
+            streng.append('\n');
+        }
+
+        return streng.toString();
     }
 
     // c)
