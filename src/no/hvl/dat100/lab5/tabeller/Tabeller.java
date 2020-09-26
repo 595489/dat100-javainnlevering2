@@ -101,8 +101,15 @@ public class Tabeller
     public static boolean erSortert(int[] tabell)
     {
 
-        boolean sorted = false;
-        
+        boolean sorted = true;
+        for (int i = 0; i < tabell.length -1; i++)
+        {
+            if (tabell[i] > tabell[i + 1])
+            {
+                sorted = false;
+                break;
+            }
+        }
 
         return sorted;
     }
