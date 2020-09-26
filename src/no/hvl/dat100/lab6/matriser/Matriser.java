@@ -1,50 +1,66 @@
 package no.hvl.dat100.lab6.matriser;
 
-public class Matriser {
+public class Matriser
+{
 
-	// a)
-	public static void skrivUt(int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
-	}
+    // a)
+    public static void skrivUt(int[][] matrise)
+    {
 
-	// b)
-	public static String tilStreng(int[][] matrise) {
+        for (int i = 0; i < matrise.length; i++)
+        {
+			for (int j = 0; j < matrise.length; j++)
+            {
+                System.out.print(matrise[i][j]);
 
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
-	}
+                if (j < matrise.length - 1)
+                    System.out.print(",");
+            }
+			System.out.println();
+        }
+    }
 
-	// c)
-	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
-	}
+    // b)
+    public static String tilStreng(int[][] matrise)
+    {
 
-	// d)
-	public static boolean erLik(int[][] a, int[][] b) {
+        // TODO
+        throw new UnsupportedOperationException("tilStreng ikke implementert");
 
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
-	}
-	
-	// e)
-	public static int[][] speile(int[][] matrise) {
+    }
 
-		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
-	
-	}
+    // c)
+    public static int[][] skaler(int tall, int[][] matrise)
+    {
 
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
+        // TODO
+        throw new UnsupportedOperationException("skaler ikke implementert");
 
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
-	
-	}
+    }
+
+    // d)
+    public static boolean erLik(int[][] a, int[][] b)
+    {
+
+        // TODO
+        throw new UnsupportedOperationException("erLik ikke implementert");
+    }
+
+    // e)
+    public static int[][] speile(int[][] matrise)
+    {
+
+        // TODO
+        throw new UnsupportedOperationException("speile ikke implementert");
+
+    }
+
+    // f)
+    public static int[][] multipliser(int[][] a, int[][] b)
+    {
+
+        // TODO
+        throw new UnsupportedOperationException("multipliser ikke implementert");
+
+    }
 }
